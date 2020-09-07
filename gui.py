@@ -306,7 +306,7 @@ class ThrowEditor(Toplevel):
 
     @staticmethod
     def validate_number(new_string):
-        if new_string == "":
+        if new_string == "" or new_string == "-":
             return True
         try:
             float(new_string)
